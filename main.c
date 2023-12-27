@@ -79,6 +79,8 @@ static ble_uuid_t m_adv_uuids[]          =                                      
     {BLE_UUID_NUS_SERVICE, NUS_SERVICE_UUID_TYPE}
 };
 
+uint8_t BLE_Rx_Raw[20];
+uint8_t BLE_Rx_Raw_Count = 0;
 
 /**@brief Function for assert macro callback.
  *
@@ -167,6 +169,9 @@ static void nus_data_handler(ble_nus_evt_t * p_evt)
 
         for (uint32_t i = 0; i < p_evt->params.rx_data.length; i++)
         {
+          //NOTE: gelen datayý burada tutuyoruz
+          BLE_Rx_Raw[i] = p_evt->params.rx_data.p_data[i];
+          BLE_Rx_Raw_Count++;
             do
             {
                 err_code = app_uart_put(p_evt->params.rx_data.p_data[i]);

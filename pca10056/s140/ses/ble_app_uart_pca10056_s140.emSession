@@ -44,7 +44,9 @@
   <Trace enabled="Yes"/>
  </TraceWindow>
  <Watch1>
-  <Watches active="1" update="Never"/>
+  <Watches active="1" update="Twice a Second">
+   <Watchpoint expression="BLE_Rx_Raw" name="BLE_Rx_Raw" radix="-1" linenumber="0" filename=""/>
+  </Watches>
  </Watch1>
  <Watch2>
   <Watches active="0" update="Never"/>
@@ -56,9 +58,9 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="72" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="62" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="47" y="171" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="182" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="145" useTextEdit="1" openedFrom="D:/_FW/NRF/nRF5_SDK_17.1.0/examples/MyProject/ble_app_uart/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/softdevice/s140/headers/ble_types.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="317" useTextEdit="1" openedFrom="D:/_FW/NRF/nRF5_SDK_17.1.0/examples/MyProject/ble_app_uart/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/softdevice/s140/headers/ble_gap.h" selected="0" top="294" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ble_app_uart_pca10056_s140" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <ARMCrossStudioWindow activeProject="ble_app_uart_pca10056_s140" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>
